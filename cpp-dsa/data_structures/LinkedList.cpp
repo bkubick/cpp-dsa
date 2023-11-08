@@ -155,7 +155,7 @@ bool LinkedList::set(int index, int value)
 
 bool LinkedList::insert(int index, int value)
 {
-    if (index < 0 || index >= length)
+    if (index < 0 || index > length)
     {
         return false;
     }
@@ -163,7 +163,7 @@ bool LinkedList::insert(int index, int value)
     if (index == 0)
     {
         this->prepend(value);
-    } else if (index == length - 1)
+    } else if (index == length)
     {
         this->append(value);
     } else
