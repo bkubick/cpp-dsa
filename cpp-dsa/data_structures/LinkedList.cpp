@@ -19,7 +19,8 @@ LinkedList::LinkedList(int value)
     length = 1;
 }
 
-LinkedList::~LinkedList() {
+LinkedList::~LinkedList()
+{
     Node* temp = head;
     while (head != nullptr)
     {
