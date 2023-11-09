@@ -9,6 +9,12 @@ Graph::Graph(std::string vertex)
 }
 
 
+Graph::~Graph()
+{
+    adjacencyList.clear();
+}
+
+
 bool Graph::addVertex(std::string vertex)
 {
     if (adjacencyList.count(vertex) != 0) return false;

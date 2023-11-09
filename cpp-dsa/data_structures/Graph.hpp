@@ -8,6 +8,7 @@ class Graph {
     
     public:
         Graph(std::string vertex);
+        ~Graph();
         bool addVertex(std::string vertex);
         bool addEdge(std::string vertex1, std::string vertex2);
         bool removeEdge(std::string vertex1, std::string vertex2);
