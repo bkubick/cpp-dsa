@@ -21,16 +21,23 @@ void bubbleSort(int arr[], int size)
 
 int main()
 {
-    int arr[] = {6, 3, 2, 5, 4, 1};
-    int size = sizeof(arr) / sizeof(arr[0]);
+    // Helper lambda function to print an array to verify the sorting function.
+    auto runAndPrintSort = [](void (*sortingAlgorithm)(int[], int)) 
+    { 
+        int arr[] = {6, 3, 2, 5, 4, 1};
+        int size = sizeof(arr) / sizeof(arr[0]);
 
-    bubbleSort(arr, size);
+        sortingAlgorithm(arr, size);
 
-    for (int i = 0; i < size; i++)
-    {
-        std::cout << arr[i] << " ";
-    }
-    std::cout << std::endl;
+        for (int i = 0; i < size; i++)
+        {
+            std::cout << arr[i] << " ";
+        }
+        std::cout << std::endl;
+    };
+
+
+    runAndPrintSort(bubbleSort);
 
     return 0;
 }
