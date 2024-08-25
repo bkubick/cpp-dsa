@@ -19,19 +19,20 @@ In addition to practice/review, I want a centralized location that I can impleme
 There are a handful of custom classes of common Data Structures I plan to implement. The list of currently implemented data structures are listed below.
 
 * `LinkedList`
+* `Graph`
+* `HashTable`
+* `Queue`
+* `Stack`
+* `BinarySearchTree`
 
 ### Algorithms
 
 There are a handful of custom implementations of common algorithms. The list of currently implemented algorithms are listed below.
 
-**TODO** The following algorithms will be added
-
-#### Search
-* `binary_search`
+#### Math
+* `leastCommonMultiple`
 
 #### Sorting
-* `bubble_sort`
-* `insertion_sort`
-* `mergesort`
-* `quicksort`
-* `selection_sort`
+* `bubbleSort`
+* `insertionSort`
+* `selectionSort`
